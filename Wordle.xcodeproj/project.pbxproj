@@ -17,6 +17,9 @@
 		A363215527D9161E008B6E16 /* WordleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A363215427D9161E008B6E16 /* WordleTests.swift */; };
 		A363215F27D9161E008B6E16 /* WordleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A363215E27D9161E008B6E16 /* WordleUITests.swift */; };
 		A363216127D9161E008B6E16 /* WordleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A363216027D9161E008B6E16 /* WordleUITestsLaunchTests.swift */; };
+		A363217027D917C7008B6E16 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A363216F27D917C7008B6E16 /* KeyboardViewController.swift */; };
+		A363217227D917EF008B6E16 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A363217127D917EF008B6E16 /* BoardViewController.swift */; };
+		A363217427D91EB5008B6E16 /* KeyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A363217327D91EB4008B6E16 /* KeyCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		A363215A27D9161E008B6E16 /* WordleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A363215E27D9161E008B6E16 /* WordleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleUITests.swift; sourceTree = "<group>"; };
 		A363216027D9161E008B6E16 /* WordleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A363216F27D917C7008B6E16 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		A363217127D917EF008B6E16 /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
+		A363217327D91EB4008B6E16 /* KeyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +107,9 @@
 		A363213927D9161A008B6E16 /* Wordle */ = {
 			isa = PBXGroup;
 			children = (
-				A363213A27D9161A008B6E16 /* AppDelegate.swift */,
-				A363213C27D9161A008B6E16 /* SceneDelegate.swift */,
-				A363213E27D9161A008B6E16 /* ViewController.swift */,
-				A363214027D9161A008B6E16 /* Main.storyboard */,
-				A363214627D9161D008B6E16 /* Assets.xcassets */,
-				A363214827D9161D008B6E16 /* LaunchScreen.storyboard */,
+				A363216E27D91777008B6E16 /* Other */,
+				A363216D27D9175F008B6E16 /* Core */,
 				A363214B27D9161D008B6E16 /* Info.plist */,
-				A363214327D9161A008B6E16 /* Wordle.xcdatamodeld */,
 			);
 			path = Wordle;
 			sourceTree = "<group>";
@@ -128,6 +129,30 @@
 				A363216027D9161E008B6E16 /* WordleUITestsLaunchTests.swift */,
 			);
 			path = WordleUITests;
+			sourceTree = "<group>";
+		};
+		A363216D27D9175F008B6E16 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A363213E27D9161A008B6E16 /* ViewController.swift */,
+				A363216F27D917C7008B6E16 /* KeyboardViewController.swift */,
+				A363217127D917EF008B6E16 /* BoardViewController.swift */,
+				A363217327D91EB4008B6E16 /* KeyCell.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A363216E27D91777008B6E16 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				A363213A27D9161A008B6E16 /* AppDelegate.swift */,
+				A363213C27D9161A008B6E16 /* SceneDelegate.swift */,
+				A363214027D9161A008B6E16 /* Main.storyboard */,
+				A363214627D9161D008B6E16 /* Assets.xcassets */,
+				A363214827D9161D008B6E16 /* LaunchScreen.storyboard */,
+				A363214327D9161A008B6E16 /* Wordle.xcdatamodeld */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +287,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A363214527D9161A008B6E16 /* Wordle.xcdatamodeld in Sources */,
+				A363217427D91EB5008B6E16 /* KeyCell.swift in Sources */,
+				A363217027D917C7008B6E16 /* KeyboardViewController.swift in Sources */,
 				A363213F27D9161A008B6E16 /* ViewController.swift in Sources */,
 				A363213B27D9161A008B6E16 /* AppDelegate.swift in Sources */,
 				A363213D27D9161A008B6E16 /* SceneDelegate.swift in Sources */,
+				A363217227D917EF008B6E16 /* BoardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
